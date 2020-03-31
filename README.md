@@ -1,5 +1,7 @@
 # Ruby COVID19 API wrapper
 
+[![Gem Version](https://badge.fury.io/rb/covid19_api.svg)](https://badge.fury.io/rb/covid19_api)
+
 Wrapper for [covid19api.com](https://covid19api.com/) (Data sourced from [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)).
 
 ## Install
