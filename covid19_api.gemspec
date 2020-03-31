@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'covid19_api'
-  s.version = '0.0.3'
+  s.version = '0.0.4'
   s.date = '2020-03-31'
   s.summary = 'COVID19 API ruby wrapper'
   s.description = 'Ruby wrapper for https://covid19api.com/'
