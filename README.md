@@ -4,7 +4,7 @@ Wrapper for [covid19api.com](https://covid19api.com/) (Data sourced from [Johns 
 
 ## Install
 
-`$ gem install covid19-api` or add `covid19-api` to your `Gemfile`.
+`$ gem install covid19_api` or add `covid19_api` to your `Gemfile`.
 
 ## Use
 
@@ -63,7 +63,7 @@ Covid19.cases_live_by_country_and_status('Ireland', 'confirmed')
 
 Returns all live cases by case type for a country after a given date. These records are pulled every 10 minutes and are ungrouped. Country must be the slug from `/countries` or `/summary`.
 ```ruby
-Covid19.cases_live_by_country_after_date('Ireland', 'confirmed', )
+Covid19.cases_live_by_country_after_date('Ireland', 'confirmed', '2020-03-21T13:13:30Z')
 ```
 
 Returns all daily data. This call results in 10MB of data being returned and should be used infrequently.

@@ -5,7 +5,7 @@ require 'http'
 # Ruby wrapper for https://covid19api.com/.
 class Covid19
   BASE_URL = 'https://api.covid19api.com'.freeze
-  STATUSES = %w[confirmed recoverd deaths].freeze
+  STATUSES = %w[confirmed recovered deaths].freeze
 
   class << self
     def info
@@ -72,7 +72,7 @@ class Covid19
     def cases_live_by_country_after_date(
       country,
       status,
-      date: Date.today.prev_day.iso8601
+      date = (DateTime.now - 1).to_s
     )
       return invalid_status_msg(status) unless valid_status?(status)
 
